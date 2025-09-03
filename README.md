@@ -179,7 +179,7 @@
       <div class="fun-facts">
         <p>🍜 I enjoy multitasking between cooking and debugging code.</p>
         <p>🔥 I'm lowkey competitive in Mobile Legends and love strategic gameplay.</p>
-        <p>🧹 Cleaning helps me think clearly — it's like debugging, but in real life!</p>
+        <p>🧹 Cleaning helps me think clearly — it's like debugging, but in real life!!</p>
         <p>🍟 I was once told I make the best fries at McDonald’s 😂</p>
       </div>
     </section>
