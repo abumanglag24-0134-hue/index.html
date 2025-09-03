@@ -121,7 +121,7 @@
 <body>
   <!-- Sidebar -->
   <aside class="sidebar">
-    <img src="https://via.placeholder.com/150" alt="Angeline's Picture">
+    <img src="(https://avatars.githubusercontent.com/u/227550422?v=4)" "alt="Angeline's Picture">
     <h1>Angeline Bumanglag</h1>
     <p>🌟 Rising Star | CS Student | Developer</p>
     <nav>
