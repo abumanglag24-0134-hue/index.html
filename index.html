@@ -5,12 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🌟 Angeline Bumanglag | Portfolio</title>
   <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: "Segoe UI", Arial, sans-serif;
@@ -20,7 +15,6 @@
       min-height: 100vh;
     }
 
-    /* Sidebar */
     .sidebar {
       background: #cc3366;
       color: white;
@@ -61,11 +55,8 @@
       transition: 0.3s;
     }
 
-    .sidebar nav a:hover {
-      color: #ffe6f0;
-    }
+    .sidebar nav a:hover { color: #ffe6f0; }
 
-    /* Main Content */
     .main {
       margin-left: 250px;
       padding: 40px;
@@ -80,34 +71,48 @@
       box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     }
 
-    h2 {
-      color: #cc3366;
-      margin-bottom: 15px;
-    }
+    h2 { color: #cc3366; margin-bottom: 15px; }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      padding: 6px 0;
-    }
-
-    .fun-facts {
-      background: #fff0f5;
-      padding: 15px;
-      border-left: 6px solid #cc3366;
-      border-radius: 8px;
-    }
-
-    a {
-      color: #cc3366;
+    .pdf-button {
+      display: inline-block;
+      background-color: #cc3366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
       text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: pulse 2s infinite;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .pdf-button:hover {
+      background-color: #ff6699;
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(204, 51, 102, 0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(204, 51, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(204, 51, 102, 0); }
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 2px solid #cc3366;
+      border-radius: 10px;
+      margin-top: 20px;
     }
 
     footer {
@@ -119,9 +124,8 @@
   </style>
 </head>
 <body>
-  <!-- Sidebar -->
   <aside class="sidebar">
-    <img src="https://via.placeholder.com/150" alt="Angeline's Picture">
+    <img src="https://avatars.githubusercontent.com/u/227550422?v=4" alt="Angeline's Picture">
     <h1>Angeline Bumanglag</h1>
     <p>🌟 Rising Star | CS Student | Developer</p>
     <nav>
@@ -135,12 +139,11 @@
     </nav>
   </aside>
 
-  <!-- Main Content -->
   <main class="main">
     <section id="about">
       <h2>👩‍💻 About Me</h2>
       <p>Hello! I'm <b>Angeline Bumanglag</b>, 19 years old and currently pursuing a Bachelor of Science in Computer Science at <b>City College of Angeles</b>.</p>
-      <p>I work at <b>McDonald’s</b>, where I was awarded the <b>Rising Star</b> 🌟 — and just like that, I strive to rise in my academic and tech journey. I'm passionate, hardworking, and eager to grow into a skilled developer. 💻✨</p>
+      <p>I work at <b>McDonald’s</b>, where I was awarded the <b>Rising Star</b> 🌟 — and just like that, I strive to rise in my academic and tech journey. I'm passionate, hardworking, and eager to learn and grow in the tech industry.</p>
     </section>
 
     <section id="interests">
@@ -166,22 +169,45 @@
       </ul>
     </section>
 
+    <!-- ✅ UPDATED PROJECTS SECTION -->
     <section id="projects">
-      <h2>🔗 Project Links</h2>
-      <ul>
-        <li>🚧 <i>Coming soon!</i></li>
-        <li>📁 <i>Add links to your GitHub projects here</i></li>
-      </ul>
+      <h2>📚 Midterm Tasks</h2>
+      <p>Click below to preview my work instantly!</p>
+
+      <div class="button-container">
+        <!-- ✅ FIXED RAW LINK TASK 1 -->
+        <button class="pdf-button" onclick="showPDF('https://docs.google.com/gview?url=https://github.com/abumanglag24-0134-hue/angeline-s-portfolio/raw/main/MIDTERM%20TASK%201_%20BUMANGLAG.pdf&embedded=true')">📄 Midterm Task 1</button>
+
+        <button class="pdf-button" onclick="showPDF('https://docs.google.com/gview?url=https://github.com/abumanglag24-0134-hue/angeline-s-portfolio/raw/main/MIDTERM%20TASK%202_Bumanglag.pdf&embedded=true')">📄 Midterm Task 2</button>
+
+        <button class="pdf-button" onclick="showPDF('https://docs.google.com/gview?url=https://github.com/abumanglag24-0134-hue/angeline-s-portfolio/raw/main/MIDTERM%20TASK%203_Bumanglag.pdf&embedded=true')">📄 Midterm Task 3</button>
+
+        <button class="pdf-button" onclick="showPDF('https://docs.google.com/gview?url=https://github.com/abumanglag24-0134-hue/angeline-s-portfolio/raw/main/MIDTERM%20TASK%204_Bumanglag.pdf&embedded=true')">📄 Midterm Task 4</button>
+
+        <button class="pdf-button" onclick="showPDF('https://docs.google.com/gview?url=https://github.com/abumanglag24-0134-hue/angeline-s-portfolio/raw/main/MIDTERM%20TASK%205_Bumanglag.pdf&embedded=true')">📄 Midterm Task 5</button>
+
+        <!-- ✅ FIXED Midterm Task 6 (Part 1) -->
+        <button class="pdf-button"
+          onclick="showPDF('https://docs.google.com/gview?url=https://raw.githubusercontent.com/abumanglag24-0134-hue/angeline-s-portfolio/main/MIDTERM%20TASK%206_Bumanglag%2C%20Mangalino%20%231.pdf&embedded=true')">
+          📄 Midterm Task 6 (Part 1)
+        </button>
+
+        <!-- ✅ FIXED Midterm Task 6 (Part 2) -->
+        <button class="pdf-button"
+          onclick="showPDF('https://docs.google.com/gview?url=https://raw.githubusercontent.com/abumanglag24-0134-hue/angeline-s-portfolio/main/MIDTERM%20TASK%206_Bumanglag%2C%20Mangalino%20%232.pdf&embedded=true')">
+          📄 Midterm Task 6 (Part 2)
+        </button>
+      </div>
+
+      <iframe id="viewer-frame" src="" allowfullscreen></iframe>
     </section>
 
     <section id="fun">
       <h2>🤪 Fun Facts About Me</h2>
-      <div class="fun-facts">
-        <p>🍜 I enjoy multitasking between cooking and debugging code.</p>
-        <p>🔥 I'm lowkey competitive in Mobile Legends and love strategic gameplay.</p>
-        <p>🧹 Cleaning helps me think clearly — it's like debugging, but in real life!</p>
-        <p>🍟 I was once told I make the best fries at McDonald’s 😂</p>
-      </div>
+      <p>🍜 I enjoy multitasking between cooking and debugging code.</p>
+      <p>🔥 I'm lowkey competitive in Mobile Legends and love strategic gameplay.</p>
+      <p>🧹 Cleaning helps me think clearly — it's like debugging, but in real life!</p>
+      <p>🍟 I was once told I make the best fries at McDonald’s 😂</p>
     </section>
 
     <section id="experience">
@@ -195,7 +221,6 @@
       <ul>
         <li>📧 <b>Email:</b> <a href="mailto:abumanglag24-0134@cca.edu.ph">abumanglag24-0134@cca.edu.ph</a></li>
         <li>👤 <b>Facebook:</b> <a href="https://www.facebook.com/">Angeline Bumanglag</a></li>
-        <li>🌐 <b>LinkedIn:</b> <i>Coming soon!</i></li>
       </ul>
     </section>
 
@@ -203,5 +228,11 @@
       ✨ Thank you for visiting my portfolio! I'm still learning, but I'm excited for what's ahead. 💪
     </footer>
   </main>
+
+  <script>
+    function showPDF(url) {
+      document.getElementById('viewer-frame').src = url;
+    }
+  </script>
 </body>
 </html>
